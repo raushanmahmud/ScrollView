@@ -37,20 +37,32 @@
                                     <constraint firstAttribute="height" constant="128" id="Gyc-Ag-Otf"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYm-py-cX1">
+                                <rect key="frame" x="58" y="0.0" width="260" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="cVL-kA-aJT"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="a6v-va-xJf" secondAttribute="trailing" constant="7" id="08f-A9-6th"/>
                             <constraint firstAttribute="trailing" secondItem="TR5-Ql-CI5" secondAttribute="trailing" id="0UP-na-Go5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PYm-py-cX1" secondAttribute="bottom" id="Gw8-Uo-LIP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TR5-Ql-CI5" secondAttribute="bottom" id="HxJ-9R-hbs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZaJ-7L-nqx" secondAttribute="bottom" id="JPz-jA-eM7"/>
                             <constraint firstItem="ZaJ-7L-nqx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K0x-6z-JGI"/>
                             <constraint firstItem="TR5-Ql-CI5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vgv-ho-MBU"/>
+                            <constraint firstItem="PYm-py-cX1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cRX-ye-hK4"/>
                             <constraint firstItem="a6v-va-xJf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gJK-Qj-z26"/>
+                            <constraint firstItem="PYm-py-cX1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="giU-qV-tuu"/>
                             <constraint firstAttribute="trailing" secondItem="ZaJ-7L-nqx" secondAttribute="trailing" id="hTC-L3-SFa"/>
                             <constraint firstItem="ZaJ-7L-nqx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rVS-hS-YVg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="PYm-py-cX1" id="1ku-HP-5l1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
